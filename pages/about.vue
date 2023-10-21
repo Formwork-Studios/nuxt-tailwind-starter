@@ -5,8 +5,9 @@ useHead({
 </script>
 
 <template>
-  <div>
-    Page: about
+  <div class="inline">
+    <div>Page: about</div>
+    <Btn :to="'/'" :msg="'home'" />
   </div>
 </template>
 

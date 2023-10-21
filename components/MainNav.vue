@@ -5,8 +5,8 @@
     <div class="container my-2 px-2 flex justify-between">
       <NuxtLink to="/">Site Title</NuxtLink>
       <div class="space-x-4">
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/contact">Contact</NuxtLink>
+        <NuxtLink to="/about" activeClass="underline">About</NuxtLink>
+        <NuxtLink to="/contact" activeClass="underline">Contact</NuxtLink>
       </div>
     </div>
   </div>

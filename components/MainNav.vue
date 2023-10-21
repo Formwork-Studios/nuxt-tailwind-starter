@@ -2,8 +2,7 @@
 
 <template>
   <div>
-    <MainNav />
-    <slot />
+    Component: MainNav
   </div>
 </template>
 

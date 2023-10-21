@@ -5,16 +5,14 @@ const error = useError();
 <template>
     <NuxtLayout name="404">
         <div>
-            <h1>Dang</h1>
-            <p>
-                <strong>{{ error.message }}</strong>
-            </p>
-            <p>It looks like something broke.</p>
-            <p>Sorry about that.</p>
-            <NuxtLink to="/" class="inline-flex items-center">
-                <i-mdi-arrow-left class="pr-1" />
-                Go Home
-            </NuxtLink>
+            <div v-if="error.statusCode === 404">
+                <h1>404</h1>
+                <h2>
+                    <strong>{{ error.message }}</strong>
+                </h2>
+                <p>It looks like you found a glitch in the matrix...</p>
+                <Btn msg="home" :icon="false" to="/" />
+            </div>
         </div>
     </NuxtLayout>
 </template>

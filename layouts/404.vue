@@ -1,9 +1,11 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div>
+  <div class="flex flex-col items-center">
     <MainNav />
-    <slot />
+    <div class="container px-2">
+      <slot />
+    </div>
   </div>
 </template>
 

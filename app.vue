@@ -7,7 +7,7 @@
 <script setup lang="ts">
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - 0Base` : '0Base';
+    return titleChunk ? `${titleChunk} - Nuxt Tailwind Starter` : 'Nuxt Tailwind Starter';
   }
 })
 </script>

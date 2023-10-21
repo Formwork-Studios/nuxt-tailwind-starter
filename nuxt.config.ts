@@ -11,6 +11,15 @@ export default defineNuxtConfig({
     ["unplugin-icons/nuxt", { autoInstall: true }],
     '@vueuse/nuxt',
 ],
+postcss: {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+},
+tailwindcss: {
+  cssPath: '~/assets/css/main.css',
+  },
 vite: {
   plugins: [
     Components({

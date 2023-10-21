@@ -13,13 +13,9 @@ const displayMsg = computed(() => msg ?? to);
 </script>
 
 <template>
-  <NuxtLink
-    :to="to"
-    class="inline-flex p-2 bg-gray-800 text-white cursor-pointer mt-4"
-    @click="onclick"
-  >
+  <NuxtLink :to="to" class="inline-flex p-2 bg-gray-800 text-white cursor-pointer mt-4" @click="onclick">
     <p>{{ displayMsg }}</p>
-    <i-mdi-arrow-bottom-right v-if="icon" class="mt-0.5 -mr-2"/>
+    <i-mdi-arrow-bottom-right v-if="icon" class="mt-0.5 -mr-2" />
   </NuxtLink>
 </template>
 

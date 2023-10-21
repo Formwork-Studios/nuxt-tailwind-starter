@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   env: {
     NUXT_APP_BASE_URL: '/nuxt-tailwind-starter/'
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
   modules: [
     '@nuxtjs/tailwindcss',

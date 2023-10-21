@@ -4,6 +4,7 @@ import IconsResolver from "unplugin-icons/resolver";
 import Components from "unplugin-vue-components/vite";
 
 export default defineNuxtConfig({
+  ssr: false,
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   modules: [

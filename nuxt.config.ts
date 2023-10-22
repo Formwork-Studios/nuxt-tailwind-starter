@@ -6,8 +6,9 @@ import Components from "unplugin-vue-components/vite";
 export default defineNuxtConfig({
   ssr: false,
   target: 'static',
-  env: {
-    NUXT_APP_BASE_URL: '/nuxt-tailwind-starter/'
+  app: {
+    baseURL: '/nuxt-tailwind-starter/',
+    buildAssetsDir: 'assets',
   },
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],

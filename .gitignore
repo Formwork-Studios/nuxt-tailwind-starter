@@ -1,22 +1,26 @@
-# Nuxt dev/build outputs
-.data
-.nuxt
-.nitro
-.cache
-
-# Node dependencies
-node_modules
+# Nuxt
+.nuxt/
+dist/
+.cache/
 
 # Logs
 logs
 *.log
 
-# Misc
-.DS_Store
-.fleet
-.idea
+# Dependency directories
+node_modules/
+.pnpm/
+yarn.lock
+package-lock.json
 
-# Local env files
+# Build artifacts
+.build/
+
+# Environment variables
 .env
 .env.*
-!.env.example
+
+.vscode/
+
+
+.unlighthouse

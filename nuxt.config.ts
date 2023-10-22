@@ -4,6 +4,8 @@ import IconsResolver from "unplugin-icons/resolver";
 import Components from "unplugin-vue-components/vite";
 
 export default defineNuxtConfig({
+  target: 'static',
+  ssr: false,
   devtools: { enabled: false },
   app: {
     baseURL: '/nuxt-tailwind-starter/'

@@ -2,7 +2,7 @@
 
 ## Features
 - [@nuxtjs/tailwindcss](https://tailwindcss.nuxtjs.org/)
-- [unplugin-icons](https://github.com/unplugin/unplugin-icons) - makes all icons immediately availalbe on [icones.js.org](https://icones.js.org/)
+- [unplugin-icons](https://github.com/unplugin/unplugin-icons) - makes all icon from [icones.js.org](https://icones.js.org/) immediately available
 - [@vueuse/nuxt](https://github.com/vueuse/vueuse)
 - Custom error page
 - Layouts & pages folders
@@ -11,7 +11,7 @@
 
 ## About
 
-Use to quickly prototype sites where Tailwind and an icon framework are needed.
+Starter template with Tailwind and icon framework for quick prototyping.
 
 ## Deploying
 

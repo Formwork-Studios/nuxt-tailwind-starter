@@ -6,7 +6,7 @@ useHead({
 
 <template>
   <div class="inline">
-    <div>Page: about</div>
+    <div class="mb-4">Page: about</div>
     <Btn :to="'/'" :msg="'home'" />
   </div>
 </template>

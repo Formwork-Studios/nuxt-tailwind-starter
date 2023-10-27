@@ -37,7 +37,7 @@ onMounted(() => {
       console.log("Adding observer to:", word);
       observer.observe(word);
     });
-  }, 10);  // Adjust this duration to match your page transition time
+  }, 150);  // Adjust this duration to match your page transition time
 });
 
 onUnmounted(() => {

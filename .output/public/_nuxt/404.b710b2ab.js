@@ -1,0 +1,1 @@
+import{_ as s}from"./MainNav.vue.87cc439f.js";import{_ as t}from"./_plugin-vue_export-helper.c27b6911.js";import{c,a,b as n,k as r,o as _}from"./entry.bfc93a0c.js";const i={},f={class:"flex flex-col items-center"},l={class:"container px-2"};function d(e,m){const o=s;return _(),c("div",f,[a(o),n("div",l,[r(e.$slots,"default")])])}const h=t(i,[["render",d]]);export{h as default};

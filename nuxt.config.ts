@@ -8,8 +8,8 @@ export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
   app: {
- //   baseURL: '/nuxt-tailwind-starter/',     // update this to your repo name
-   // pageTransition: { name: 'page', mode: 'out-in' }
+   baseURL: '/nuxt-tailwind-starter/',     // update this to your repo name
+   pageTransition: { name: 'page', mode: 'out-in' }
   },
   css: ['~/assets/css/main.css'],
   modules: [

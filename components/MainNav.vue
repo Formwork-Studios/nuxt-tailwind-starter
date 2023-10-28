@@ -24,16 +24,19 @@ const toggleMenu = () => {
       </div>
 
       <!-- Desktop Navigation Links -->
-      <div class="hidden md:flex md:space-x-6 font-medium">
+      <div class="hidden md:flex md:space-x-6">
         <NuxtLink to="/about" activeClass="text-primary-light" class="hover:text-primary-light transition-all duration-100">About</NuxtLink>
         <NuxtLink to="/contact" activeClass="text-primary-light" class="hover:text-primary-light transition-all duration-100">Contact</NuxtLink>
+        <NuxtLink to="https://github.com/Formwork-Studios/nuxt-tailwind-starter" activeClass="text-primary-light" class="hover:text-primary-light transition-all duration-100 text-xl mt-0.5"><i-mdi-github /></NuxtLink>
       </div>
 
       <!-- Mobile Navigation Links -->
       <div :class="{ 'opacity-0 pointer-events-none': !menuOpen, 'opacity-100 pointer-events-auto': menuOpen }" 
-      class="fixed top-0 left-0 w-full h-full bg-stone-900 flex-col space-y-4 font-medium z-50 transition-opacity duration-300 ease-in-out mt-10 pt-10 px-2 flex flex-col">
+      class="fixed top-0 left-0 w-full h-full bg-stone-900 flex-col space-y-4 z-50 transition-opacity duration-300 ease-in-out mt-10 pt-10 px-2 flex flex-col">
         <NuxtLink to="/about" activeClass="text-primary-light" class="hover:text-primary-light transition-all duration-100">About</NuxtLink>
         <NuxtLink to="/contact" activeClass="text-primary-light" class="hover:text-primary-light transition-all duration-100">Contact</NuxtLink>
+        <NuxtLink to="https://github.com/Formwork-Studios/nuxt-tailwind-starter" activeClass="text-primary-light" class="hover:text-primary-light transition-all duration-100 text-xl mt-0.5"><i-mdi-github /></NuxtLink>
+
       </div>
     </div>
   </div>

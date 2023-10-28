@@ -1,10 +1,10 @@
 const client_manifest = {
-  "_MainNav.vue.565c3206.js": {
+  "_MainNav.vue.c7513560.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "MainNav.vue.565c3206.js",
+    "file": "MainNav.vue.c7513560.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -21,9 +21,9 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "404.705f8b25.js",
+    "file": "404.9d507b0a.js",
     "imports": [
-      "_MainNav.vue.565c3206.js",
+      "_MainNav.vue.c7513560.js",
       "__plugin-vue_export-helper.c27b6911.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -35,9 +35,9 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "default.392d7ad4.js",
+    "file": "default.df7a45df.js",
     "imports": [
-      "_MainNav.vue.565c3206.js",
+      "_MainNav.vue.c7513560.js",
       "__plugin-vue_export-helper.c27b6911.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -63,7 +63,7 @@ const client_manifest = {
       "layouts/404.vue",
       "layouts/default.vue"
     ],
-    "file": "entry.67c23a0e.js",
+    "file": "entry.3be89a47.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js"
   },
@@ -78,7 +78,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "about.f3b8db10.js",
+    "file": "about.c45b7d79.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -90,7 +90,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "contact.2b988fba.js",
+    "file": "contact.44a4f076.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -112,7 +112,7 @@ const client_manifest = {
     "css": [
       "index.30091619.css"
     ],
-    "file": "index.d0757de9.js",
+    "file": "index.e39cb2a1.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "__plugin-vue_export-helper.c27b6911.js"

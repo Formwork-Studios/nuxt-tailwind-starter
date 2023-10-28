@@ -6,7 +6,7 @@ import Components from "unplugin-vue-components/vite";
 export default defineNuxtConfig({
   target: 'static',
   ssr: false,
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   app: {
    baseURL: '/nuxt-tailwind-starter/',     // update this to your repo name
    pageTransition: { name: 'page', mode: 'out-in' }

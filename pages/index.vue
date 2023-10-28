@@ -37,7 +37,7 @@ const updateFeedback = (value: 'error' | 'success' | 'incomplete' | 'invalid' | 
     <p class="pt-6 pb-2">UI Badges:</p>
     <div class="flex space-x-2">
       <UiBadge :word="'New'" :bg="'red-500'" />
-      <UiBadge :word="'Hot'" :bg="'blue-500'" />
+      <UiBadge :word="'Hot'" />
     </div>
     <p class="pt-6 pb-2">Cards:</p>
     <div class="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">

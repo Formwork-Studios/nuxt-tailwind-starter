@@ -9,20 +9,17 @@ const words = ref(props.quote.split(' '));
 let observer;
 
 onMounted(() => {
-  console.log("Component mounted.");
-
-  // Wait for 1s (or however long your page transition takes) before initiating Intersection Observer
   setTimeout(() => {
-    console.log("Starting Intersection Observer.");
+   // console.log("Starting Intersection Observer.");
     observer = new IntersectionObserver(
       (entries) => {
-        console.log("Observing entries:", entries);
+       // console.log("Observing entries:", entries);
         entries.forEach((entry, index) => {
           if (entry.isIntersecting) {
-            console.log("Element is intersecting:", entry.target);
+            // console.log("Element is intersecting:", entry.target);
             setTimeout(() => {
               entry.target.classList.add('animate-delay');
-              console.log("Class added:", entry.target);
+              // console.log("Class added:", entry.target);
             }, index * 250);
           }
         });
@@ -34,17 +31,17 @@ onMounted(() => {
 
     const quoteWords = ref(document.querySelectorAll('.quoteWord'));
     quoteWords.value.forEach((word) => {
-      console.log("Adding observer to:", word);
+      // console.log("Adding observer to:", word);
       observer.observe(word);
     });
-  }, 150);  // Adjust this duration to match your page transition time
+  }, 150); 
 });
 
 onUnmounted(() => {
-  console.log("Component unmounted.");
+  // console.log("Component unmounted.");
   if (observer) {
     observer.disconnect();
-    console.log("Observer disconnected.");
+    // console.log("Observer disconnected.");
   }
 });
 </script>

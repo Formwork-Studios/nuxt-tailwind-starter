@@ -1,38 +1,62 @@
 <script lang="ts" setup>
-const renderComponent = ref(true);
 
-const componentKey = ref(0);
-
-function reloadComponent() {
-  componentKey.value++;
-}
-
-const forceRender = async () => {
-  // Here, we'll remove MyComponent
-  renderComponent.value = false;
-
-   // Then, wait for the change to get flushed to the DOM
-  await nextTick();
-
-  // Add MyComponent back in
-  renderComponent.value = true;
+// Provides fake feedback for the feedback component
+const feedback = ref<string | null>('success');
+const updateFeedback = (value: 'error' | 'success' | 'incomplete' | 'invalid' | 'consent') => {
+  feedback.value = value;
 };
 </script>
 
 <template>
   <div>
-    <h1 class="text-primary">H1 with primary color</h1>
-    <h2 class="text-secondary-dark">H2 with secondary dark variation</h2>
-    <p class="pt-6">Icon group component:</p>
-    <SocialIconGroup />
+    <p class="pt-6 pb-4">Theme Color Swatches:</p>
+    <div class="flex space-x-4 mb-4">
+      <div class="bg-primary-light w-16 h-8"></div>
+      <div class="bg-primary w-16 h-8"></div>
+      <div class="bg-primary-dark w-16 h-8"></div>
+    </div>
+    <div class="flex space-x-4">
+      <div class="bg-secondary-light w-16 h-8"></div>
+      <div class="bg-secondary w-16 h-8"></div>
+      <div class="bg-secondary-dark w-16 h-8"></div>
+    </div>
     <p class="pt-6">Buttons:</p>
     <div class="flex space-x-4">
-      <Btn :icon="false" :to="'about'" />
-      <Btn :icon="true" :to="'lkj'" msg="error page" />
-      <Btn ghost />
+      <Btn :icon="false" :to="'/'" msg="regular" />
+      <Btn :icon="true" :to="'/'" msg="with icon" />
+      <Btn msg="ghost" ghost />
     </div>
+    <p class="pt-6 pb-4">Toggle:</p>
+    <UiToggle />
+    <p class="pt-6">Feedback:</p>
+    <div class="flex space-x-4">
+      <Btn :icon="false" msg="Success" @click="updateFeedback('success')" />
+      <Btn :icon="false" msg="Error" @click="updateFeedback('error')" />
+    </div>
+    <Feedback :feedback="feedback" />
+    <p class="pt-6 pb-2">UI Badges:</p>
+    <div class="flex space-x-2">
+      <UiBadge :word="'New'" :bg="'red-500'" />
+      <UiBadge :word="'Hot'" :bg="'blue-500'" />
+    </div>
+    <p class="pt-6 pb-2">Cards:</p>
+    <div class="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
+      <UiCard header="Card Heading" imageSrc="https://loremflickr.com/640/360" imageAlt="Random placeholder image" button
+        :to="`/about`" :msg="`See More`">
+        <p>This card includes a button.</p>
+      </UiCard>
+      <UiCard header="Special Card Heading" imageSrc="https://loremflickr.com/640/360" showBadge :badgeWord="Hot"
+        :badgeColor="'red-500'">
+        <p>This card includes a badge.</p>
+      </UiCard>
+    </div>
+    <p class="pt-6 pb-4">Contact form:</p>
+    <ContactForm />
     <p class="pt-6">Animated Hero Text:</p>
-    <HeroTextAnimated :quote="'This is an animated quote'" :key="componentKey"/>
+    <HeroTextAnimated :quote="'This is animated hero text'" :key="componentKey" />
+    <p class="pt-6">Icon group component:</p>
+    <SocialIconGroup />
+    <MainFooter />
   </div>
 </template>
 

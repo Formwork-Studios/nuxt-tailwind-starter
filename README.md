@@ -2,7 +2,7 @@
 
 ## Features
 - [@nuxtjs/tailwindcss](https://tailwindcss.nuxtjs.org/)
-- [unplugin-icons](https://github.com/unplugin/unplugin-icons) - makes all icon from [icones.js.org](https://icones.js.org/) immediately available
+- [unplugin-icons](https://github.com/unplugin/unplugin-icons) - on-demand icons from [icones.js.org](https://icones.js.org/)
 - [@vueuse/nuxt](https://github.com/vueuse/vueuse)
 - Custom error page
 - Layouts & pages folders

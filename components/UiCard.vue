@@ -4,7 +4,7 @@
     <div class="p-6 bg-stone-900">
       <div class="flex justify-between items-center mb-1"> 
         <h2 class="text-2xl font-bold">{{ header }}</h2>
-        <UiBadge v-if="showBadge" :word="badgeWord" :bg="badgeColor" class="top-2 right-2 absolute z-100" />
+        <UiBadge v-if="showBadge" :word="badgeWord" class="top-2 right-2 absolute z-100" />
       </div>
       <slot></slot>
       <Btn :to="to" :msg="msg" v-if="button" class="mt-6" /> 

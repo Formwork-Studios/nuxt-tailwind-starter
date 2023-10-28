@@ -3,8 +3,6 @@ import { ref } from 'vue';
 
 const menuOpen = ref(false);
 
-const to = ref('/');
-
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
 };
@@ -14,7 +12,7 @@ const toggleMenu = () => {
   <div class="w-full flex flex-col items-center bg-stone-900 text-white mb-4 shadow-sm">
     <div class="container my-2 px-2 flex flex-col md:flex-row justify-between text-lg">
       <div class="flex justify-between items-center w-full md:mb-0">
-        <NuxtLink :to="to" class="font-medium" @click="`() => void`" >Nuxt Tailwind Starter</NuxtLink>
+        <NuxtLink :to="'/'" class="font-medium">Nuxt Tailwind Starter</NuxtLink>
         
         <!-- Hamburger Menu -->
         <button @click="toggleMenu" class="md:hidden">

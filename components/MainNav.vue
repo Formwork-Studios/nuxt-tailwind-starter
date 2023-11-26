@@ -24,7 +24,7 @@ const toggleMenu = () => {
       <!-- Desktop Navigation Links -->
       <div class="hidden md:flex md:space-x-6">
         <NuxtLink to="/about" activeClass="border-stone-200" class="hover:border-b-2 transition-all duration-100">About</NuxtLink>
-        <NuxtLink to="/contact" activeClass="border-stone-200" class="hover:border-stone-200 border-b-2 border-transparent transition-all duration-100">Contact</NuxtLink>
+        <NuxtLink to="/contact" activeClass="border-stone-200 " class="hover:border-stone-200 border-b-2 border-transparent transition-all duration-100">Contact</NuxtLink>
         <NuxtLink to="https://github.com/Formwork-Studios/nuxt-tailwind-starter" activeClass="text-primary-light" class="text-xl mt-0.5"><i-mdi-github /></NuxtLink>
       </div>
 

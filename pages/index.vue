@@ -57,7 +57,7 @@ const updateFeedback = (value: 'error' | 'success' | 'incomplete' | 'invalid' | 
     <HeroTextAnimated :quote="'This is animated hero text'" :key="componentKey" />
     <p class="pt-6 componentHeader ">Icon group component</p>
     <SocialIconGroup />
-    <InfiniteScroll :fontSize="'200px'" :message="'THIS  IS  A  COOL  MESSAGE  '" :speed="8"/>
+    <InfiniteScroll :fontSize="'100px'" :message="'THIS  IS  A  COOL  MESSAGE  '" :speed="10"/>
     <p class="pt-6 pb-4 componentHeader ">Footer</p>
 
 

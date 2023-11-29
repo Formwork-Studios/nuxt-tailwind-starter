@@ -1,0 +1,1 @@
+import{d as t,u as o,o as s,c as a,a as n,b as c,_}from"./entry.4404828d.js";const i={class:"inline"},m=c("div",{class:"mb-4"},"Page: about",-1),p=t({__name:"about",setup(r){return o({title:"About"}),(d,u)=>{const e=_;return s(),a("div",i,[m,n(e,{to:"/",msg:"home"})])}}});export{p as default};

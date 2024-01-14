@@ -2,7 +2,7 @@
 
 <template>
   <div class="flex flex-col items-center">
-    <MainNav />
+    <FooNav />
     <div class="container px-2">
       <slot />
     </div>

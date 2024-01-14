@@ -8,14 +8,14 @@
     "generate": "nuxi generate && touch .output/public/.nojekyll",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
-  },  
+  },
   "devDependencies": {
     "@iconify/json": "^2.2.131",
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@vueuse/core": "^10.5.0",
     "@vueuse/nuxt": "^10.5.0",
-    "nuxt": "^3.8.0",
+    "nuxt": "^3.9.1",
     "unplugin-icons": "^0.17.1",
     "unplugin-vue-components": "^0.25.2",
     "vue": "^3.3.4",
